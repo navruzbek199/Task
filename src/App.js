@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useContext } from "react";
+import Header from "./component/Header/Header";
+import { GlobalContext } from "./store/context";
+import Forms from "./component/Forms/Forms";
+import { Col, Container, Row } from "react-bootstrap";
+import Tables from "./component/Tables/Tables";
 function App() {
+	const {theme} = useContext(GlobalContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id={theme}>
+      <Container fluid="lg">
+          <Header/>
+          <Row>
+            <Col md="5">
+              <Forms/>
+            </Col>
+            <Col md="7">
+              <Tables/> 
+            </Col>
+          </Row>
+      </Container>
     </div>
   );
 }

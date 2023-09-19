@@ -1,0 +1,220 @@
+form {
+    .form_group {
+        width: 100%;
+        border: 1px solid #1C2230;
+        padding: 24px;
+        border-radius: 10px;
+        height: 330px;
+        background-color: #283046;
+        .form_control {
+            width: 100%;
+            position: relative;
+            margin-bottom: 16px;
+
+            input {
+                border: 1px solid #fff;
+                border-radius: 10px;
+                height: 50px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 17px;
+                color: #fff;
+                width: 100%;
+                padding: 0 18px;
+                display: flex;
+                align-items: center;
+                margin-left: 0px !important;
+                outline: none;
+                position: relative;
+                background-color: #283046;
+            }
+
+
+        }
+        .form_control_select {
+            position: relative;
+
+            .select-search-container {
+                position: relative;
+                width: 100% !important;
+                background-color: unset;
+            }
+
+            svg {
+                position: absolute;
+                right: 10px;
+                top: 16px;
+            }
+        }
+        .form_control_select {
+            width: 100%;
+        
+            input {
+                &:hover {
+                    border-color: #c1ccdc !important;
+                }
+        
+                &:focus {
+                    border-color: #000 !important;
+                }
+            }
+        
+            .select-search-select {
+                background: #1C2230;
+                box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
+                border: 2px solid #c1ccdc !important;
+                overflow: auto;
+                max-height: 360px;
+                top: 60px !important;
+        
+                .select-search-options {
+                    background-color: transparent !important;
+                    background-color: #fff !important;
+                    padding-left: 0 !important;
+                    border-radius: 10px;
+        
+                    .select-search-row {
+                        background: #fff !important;
+        
+                        .select-search-option {
+                            background: #1C2230 !important;
+                            color: #fff;
+        
+                            &:hover {
+                                background: #fff !important;
+                                color: #1C2230;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            input {
+                background-color: unset;
+                margin-left: 0 !important;
+                border: 1px solid #c1ccdc;
+                border-radius: 10px;
+                height: 50px;
+                font-family: "SF Pro Display";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 17px;
+                color: #fff;
+                padding: 0 18px;
+                display: flex;
+                align-items: center;
+                outline: none;
+                position: relative;
+            }
+        }
+        .form_control_check {
+            margin-top: 16px;
+            display: flex;
+            gap: 12px;
+            label {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 17px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .check{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #fff;
+            }
+        }
+        .form_btn{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            button{
+                background: #7F73FF;
+                border-radius: 5px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                color: #FFFFFF;
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                padding: 0 32px;
+            }
+        }
+    }
+}
+
+
+
+
+
+#dark .form_group {
+    border: 1px solid #283046;
+    background-color: #283046;
+}
+
+#light .form_group {
+    border: 1px solid #c1ccdc;
+    background: #fff;
+    box-shadow: 1px 0 50px rgba(0,0,0,.25);
+    .form_control_select {
+        input {
+            color: #283046;
+        }
+
+        svg {
+            color: #283046;
+        }
+
+        .select-search-options {
+            background-color: transparent !important;
+            background-color: #fff !important;
+            padding-left: 0 !important;
+            border-radius: 10px;
+
+            .select-search-row {
+                background: #fff !important;
+
+                .select-search-option {
+                    background: #1C2230 !important;
+                    color: #fff;
+
+                    &:hover {
+                        background: #fff !important;
+                        color: #1C2230;
+                    }
+                }
+            }
+        }
+    }
+    .form_control {
+        input {
+            border: 1px solid #c1ccdc;
+            background-color: #fff;
+            color: #283046;
+        }
+    }
+    .form_control_check{
+        label{
+            color: #283046;
+        }
+        .check{
+            border: 1px solid #1C2230;
+            
+        }
+    }
+}
